@@ -1,0 +1,23 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(SolutionDir)packages\Honey\Honey.dll" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="Honey" #>
+<#@ import namespace="Honey.Extensions" #>
+<#@ output extension=".cs" #>
+<#@ include file="SaveContent.tt" #>
+<#@ include file="GenerateController.tt" #>
+<#	string currentDir = Path.GetDirectoryName(Host.TemplateFile);
+    string blueprintFile = Path.Combine(currentDir, "apiary.apib");
+
+	var parser = new BluePrintParser();
+	var resources = parser.ParseFile(blueprintFile);
+
+	foreach (var resource in resources)
+	{
+		GenerateController(resource);
+		SaveContent(String.Format(@"Controllers\{0}Controller.cs", resource.Key));
+	}
+#>

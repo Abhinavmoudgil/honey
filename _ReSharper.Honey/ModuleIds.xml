@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="FC364601-6231-4679-A2E1-3EEC86A96D2F" ModuleId="Honey" />
+  <Module PersistentId="3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B" ModuleId="Honey.SampleApi" />
+</Modules>

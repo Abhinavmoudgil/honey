@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Honey.Tests", "Honey.Tests\Honey.Tests.csproj", "{1A95D549-571D-4D12-9A99-A82DFCF690D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Honey.SampleApi", "Honey.SampleApi\Honey.SampleApi.csproj", "{3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Honey", "Honey\Honey.csproj", "{FC364601-6231-4679-A2E1-3EEC86A96D2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A95D549-571D-4D12-9A99-A82DFCF690D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A95D549-571D-4D12-9A99-A82DFCF690D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A95D549-571D-4D12-9A99-A82DFCF690D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A95D549-571D-4D12-9A99-A82DFCF690D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2820AA-6BDF-4F5A-8EA5-EEE4FB9B141B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC364601-6231-4679-A2E1-3EEC86A96D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC364601-6231-4679-A2E1-3EEC86A96D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC364601-6231-4679-A2E1-3EEC86A96D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC364601-6231-4679-A2E1-3EEC86A96D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<#@ assembly name="System.Core" #>
+<#@ assembly name="$(SolutionDir)packages\Honey\Honey.dll" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="Honey" #>
+<#@ import namespace="Honey.Extensions" #>
+<#@ output extension=".cs" #>
+<#+void GenerateController(IGrouping<string, BluePrintResource> resource){#>namespace Honey.Controllers
+{
+	public class <#= resource.Key #>Controller
+	{
+		<#+ foreach (var action in resource) { #>// <#= action.Method.ToUpper() #>/api/<#= resource.Key #><#= action.HasIdParameter ? "/5" : String.Empty #>
+		public string <#= action.Method #>(<#= action.HasIdParameter ? "int id" : String.Empty #><#= (action.HasParameters) ? String.Join(",", action.Parameters.Value.Select((parameter, i) => "{0}{1} {2}".FormatWith((i > 0) ? " " : String.Empty, parameter.Value, parameter.Key))) : String.Empty #>)
+		{
+			return "value";
+		}		
+	<#+ } #>}
+}
+<#+
+}
+#>
